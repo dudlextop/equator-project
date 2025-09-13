@@ -1,46 +1,125 @@
-# Getting Started with Create React App
+# Equator DEX - Decentralized Exchange Prototype
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A showcase-ready prototype of a CLOB-style decentralized exchange built with React, TypeScript, and Tailwind CSS.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Phantom Wallet Integration**: Connect with Solana's most popular wallet
+- **Dark Theme UI**: Professional dark theme with neon accents inspired by Raydium/Jupiter
+- **Order Book**: Real-time order book with bids (green) and asks (red) visualization
+- **Trading Panel**: BUY/SELL order placement with wallet validation
+- **My Orders**: Order management with cancel functionality
+- **Recent Trades**: Live trade stream with mock data
+- **Markets**: Market overview with price changes and volume
+- **Responsive Design**: Desktop-first responsive layout
+- **Mock API**: Complete mock data layer for realistic demo experience
 
-### `npm start`
+## 🎨 Design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Color Scheme**: Deep navy background (#0a0a0f) with violet/emerald accents
+- **Typography**: JetBrains Mono for professional trading terminal feel
+- **Animations**: Smooth transitions, hover effects, and subtle animations
+- **UI Components**: Clean, modern components with consistent spacing
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **React 18** with TypeScript
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
+- **Lucide React** for icons
+- **Create React App** for build tooling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+1. **Install Phantom Wallet**:
+   - Download from [phantom.app](https://phantom.app/)
+   - Install the browser extension
+   - Create or import a wallet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start development server**:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
-### `npm run eject`
+## 📱 Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **Connect Wallet**: Click "Connect Wallet" to connect your Phantom wallet
+2. **Trade Tab**: Place BUY/SELL orders with price and quantity inputs (requires wallet connection)
+3. **Order Book Tab**: View real-time order book depth
+4. **My Orders Tab**: Manage your active orders with cancel functionality (requires wallet connection)
+5. **Markets Tab**: Browse available trading pairs and market data
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔧 Mock Data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application uses a comprehensive mock API that simulates:
+- Real-time order book updates
+- Random trade generation
+- Market price fluctuations
+- Order placement and cancellation
+- Network delays for realistic feel
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🎯 Demo Features
 
-## Learn More
+- **Phantom Wallet Integration**: Real wallet connection with address display and balance
+- **Interactive Order Placement**: Fill out the form and place orders (requires wallet)
+- **Order Management**: Cancel orders from the My Orders tab (requires wallet)
+- **Live Data Updates**: All data refreshes automatically
+- **Responsive Design**: Works on desktop and mobile devices
+- **Professional UI**: Looks like a real trading terminal
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+├── components/          # React components
+│   ├── Header.tsx      # App header with wallet connect
+│   ├── Navigation.tsx  # Tab navigation
+│   ├── OrderBook.tsx   # Order book display
+│   ├── TradePanel.tsx  # Order placement form
+│   ├── MyOrders.tsx    # Order management
+│   ├── RecentTrades.tsx # Trade stream
+│   └── Markets.tsx     # Market overview
+├── contexts/           # React contexts
+│   └── WalletContext.tsx # Phantom wallet integration
+├── services/           # Mock API layer
+│   └── mockApi.ts     # Mock data and API calls
+├── types/             # TypeScript type definitions
+│   └── index.ts       # Shared types
+└── App.tsx            # Main application component
+```
+
+## 🎨 Customization
+
+The design system is built with Tailwind CSS and can be easily customized:
+
+- **Colors**: Update `tailwind.config.js` for different color schemes
+- **Animations**: Modify animation classes for different effects
+- **Layout**: Adjust grid layouts and spacing as needed
+- **Components**: Extend or modify components for additional features
+
+## 🚀 Deployment
+
+The application builds to static files and can be deployed to any static hosting service:
+
+```bash
+npm run build
+# Deploy the 'build' folder to your hosting service
+```
+
+## 📄 License
+
+This is a hackathon prototype project. Feel free to use and modify as needed.
+
+---
+
+**Built with ❤️ for the hackathon showcase**
